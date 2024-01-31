@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Wayne's Non-Responsive Boxes</title>
+    <title>BAD Website</title>
     <style>
         section {
             margin: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid red;
         }
+
         .image-wrapper {
             width: 200px;
-            img {
-                /* width: 100%; */
-                
-            }
         }
+
         .box-warpper {
             display: flex;
             gap: 20px;
         }
+
         .box-warpper .box {
             width: 200px;
             height: 200px;
             background-color: #007bff;
         }
+
         .box-warpper .box:nth-child(odd) {
             background-color: brown;
         }
     </style>
 </head>
+
 <body>
 
     <section>
+        <h1>The image is NOT responsive.</h1>
         <div class="image-wrapper">
             <img src="images/badui.jpeg" alt="bad ui">
         </div>
         <hr>
-        <h1>Following boxes should be Responsive and size is: 200px x 200px</h1>
+        <h1>Boxes are NOT responsive, box size is 200 x 200</h1>
         <div class="box-warpper">
             <div class="box"></div>
             <div class="box"></div>
@@ -52,4 +57,5 @@
     </section>
 
 </body>
+
 </html>
